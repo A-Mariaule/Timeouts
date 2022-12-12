@@ -4,6 +4,7 @@ let Nodescore=document.getElementsByClassName("game__score")
 let time=1000;
 let displaytime=1000;
 // event 
+Nodescore[0].textContent="Score : " + score
 for(let hole of list_hole){
     hole.addEventListener("click", (e) => {
         if(e.target.style.backgroundColor=="red"){
